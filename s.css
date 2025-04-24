@@ -1,0 +1,114 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    height: 80px;
+}
+
+a { 
+    color: black;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    margin: 5px auto;
+    border: none;
+    border-collapse: collapse;
+    font-size: 24px;
+}
+
+th, td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Tarjeta de servicio */
+.service-card {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center; /* Centrar el texto */
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido del Modal */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    max-width: 400px; /* Más compacto */
+}
+
+/* Título del Modal */
+.modal-content h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Texto del Modal */
+.modal-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Botón de Cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
