@@ -65,7 +65,43 @@ th, td {
     font-weight: bold;
 }
 
-/* Modal */
+
+.service-card{
+    width: 320px;  /* Que se adapte al contenedor */
+    height: 450px;
+    aspect-ratio: 1/1; /* Mantiene la proporción cuadrada */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.service-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Asegura que la imagen se recorte sin deformarse */
+}
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -74,37 +110,45 @@ th, td {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Contenido del Modal */
 .modal-content {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra el contenido */
+    text-align: center; 
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
-    width: 300px;
+    width: 500px;
     text-align: center;
     position: relative;
-    max-width: 400px; /* Más compacto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    aspect-ratio: 1/1; /* Cuadrado */
 }
 
-/* Título del Modal */
+.modal-content img {
+    width: 300px;
+    height: 300px ;
+    border-radius: 10px;
+}
+
+
 .modal-content h3 {
     margin: 10px 0;
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
+    font-size: 20px;
 }
 
-/* Texto del Modal */
 .modal-content p {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* Botón de Cierre */
 .close-btn {
     position: absolute;
     top: 10px;
